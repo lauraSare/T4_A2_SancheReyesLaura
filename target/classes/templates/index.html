@@ -18,7 +18,18 @@
 
     <h1>Servicios Escolares</h1>
 
+    <div class="container d-flex justify-content-end mb-2">
+        <form th:action="@{/logout}" method="post">
+            <button type="submit" class="btn btn-outline-danger btn-sm">Cerrar Sesión</button>
+        </form>
+    </div>
+
     <div class="container">
+        <div class="mb-3 d-flex gap-2">
+            <a th:href="@{/}" class="btn btn-outline-danger">Alumnos</a>
+            <a th:href="@{/materias}" class="btn btn-outline-danger">Materias</a>
+            <a th:href="@{/actividades}" class="btn btn-outline-danger">Actividades Extraescolares</a>
+        </div>
         <div class="card">
             <div class="card-header d-flex justify-content-between align-items-center">
                 <span>Listado de Alumnos</span>
